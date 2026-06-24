@@ -1,0 +1,15 @@
+D:llama_server\llama-server.exe `
+  --alias Vibe-Thinker-3B `
+  -m "I:\models\mradermacher\VibeThinker-3B-GGUF\VibeThinker-3B.Q6_K.gguf" `
+  -ngl 999 `
+  --parallel 1 `
+  -np 1 `
+  --ctx-size 191072 `
+  --verbosity 4 `
+  -fa on `
+  -ctk 'q4_0' `
+  -ctv 'q4_0' `
+  --temp 1 `
+  --top-p 0.95 `
+  --top-k 20 `
+  --min-p 0.0

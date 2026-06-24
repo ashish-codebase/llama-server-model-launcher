@@ -1,0 +1,17 @@
+D:\llama_server\llama-server.exe `
+  --alias Gemma4-12B-mtp-qat-fable `
+  -m "I:\models\yuxinlu1\gemma-4-12B-coder-fable5-composer2.5-v1-GGUF\gemma4-coding-Q6_K.gguf" `
+  -ngl -1 `
+  --model-draft "I:\models\Janvitos\gemma-4-12B-it-qat-assistant-MTP-Q8_0-GGUF\gemma-4-12B-it-qat-assistant-MTP-Q8_0.gguf" `
+  --spec-type draft-mtp `
+  --spec-draft-n-max 1 `
+  --parallel 1 `
+  --ctx-size 128000 `
+  --temp 1.0 `
+  --top-p 0.95 `
+  --top-k 64 `
+  --flash-attn on `
+  --threads 12 `
+  --verbosity 4 `
+  --no-mmap `
+  --kv-unified

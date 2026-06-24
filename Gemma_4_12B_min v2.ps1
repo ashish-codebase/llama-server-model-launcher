@@ -1,0 +1,17 @@
+D:llama_server\llama-server.exe `
+  --alias Gemma4-12B `
+  -m "I:\models\unsloth\gemma-4-12b-it-GGUF\gemma-4-12b-it-UD-Q4_K_XL.gguf" `
+  --temp 0.3 `
+  --top-p 0.95 `
+  -ctk q8_0 `
+  -ctv q8_0 `
+  --top-k 64 `
+  --verbosity 3 `
+  --min-p 0.0 `
+  --jinja `
+  --flash-attn on `
+  -ngl 99 `
+  -c 65535 `
+  --no-mmap `
+  --reasoning off `
+  --reasoning-budget 0

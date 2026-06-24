@@ -1,0 +1,27 @@
+&"G:\downloads\turboquant-plus-tqp-v0.1.1-windows-x64-cuda12.4\llama-server.exe" `
+  --alias qwen36-MTP-UD `
+  -m "I:\models\barozp\Qwen3.6-28B-REAP20-A3B-GGUF\Qwen3.6-28B-REAP20-A3B-Q4_K_M.gguf" `
+  -ngl 99 `
+  --no-mmap `
+  --cache-type-k turbo4 `
+  --cache-type-v turbo3 `
+  -t 12 `
+  -b 2048 `
+  -ub 1024 `
+  --parallel 1 `
+  -np 1 `
+  --jinja `
+  --kv-unified `
+  -ncmoe 18 `
+  --ctx-size 80000 `
+  --verbosity 4 `
+  -fa on `
+  --temp 0.6 `
+  --top-p 0.8 `
+  --top-k 20 `
+  --min-p 0.0 `
+  --presence-penalty 1.5 `
+  --repeat-penalty 1 `
+  --jinja `
+  --cache-reuse 256 `
+  

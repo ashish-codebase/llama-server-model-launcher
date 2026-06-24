@@ -1,0 +1,12 @@
+D:llama_server\llama-server.exe `
+  --alias GPT-OSS-20B `
+  -m "I:\models\unsloth\gpt-oss-20b-GGUF\gpt-oss-20b-UD-Q4_K_XL.gguf" `
+  -ngl 99 `
+  --kv-unified `
+  --batch-size 2048 `
+  -t 12 `
+  --parallel 2 `
+  -c 102400 `
+  --verbosity 4 `
+  --flash-attn on `
+  --no-mmproj

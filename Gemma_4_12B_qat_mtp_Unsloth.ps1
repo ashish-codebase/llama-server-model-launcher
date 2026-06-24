@@ -1,0 +1,14 @@
+D:\llama_server\llama-server.exe `
+  --alias Gemma4-12B-mtp-qat-Unsloth `
+  -m "I:\models\unsloth\gemma-4-12B-it-qat-GGUF\gemma-4-12B-it-qat-UD-Q4_K_XL.gguf" `
+  --model-draft "I:\models\Janvitos\gemma-4-12B-it-qat-assistant-MTP-Q8_0-GGUF\gemma-4-12B-it-qat-assistant-MTP-Q8_0.gguf" `
+  --spec-type draft-mtp `
+  --spec-draft-n-max 2 `
+  --parallel 1 `
+  --ctx-size 132768 `
+  --temp 1 `
+  --top-p 0.95 `
+  --top-k 64 `
+  -ngl 99 `
+  -fa on `
+  --chat-template-kwargs '{\"enable_thinking\":false}'

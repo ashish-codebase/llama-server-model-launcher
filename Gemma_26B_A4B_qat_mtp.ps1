@@ -1,0 +1,26 @@
+D:llama_server\llama-server.exe `
+  --alias Gemma-MTP-QAT `
+  -m "I:\models\unsloth\gemma-4-26B-A4B-it-qat-GGUF\gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf" `
+  --spec-draft-model "I:\models\ironbcc\gemma-4-26B-A4B-it-MTP-GGUF\gemma-4-26B-A4B-it-assistant-Q4_K_M.gguf" `
+  --spec-type draft-mtp `
+  --spec-draft-n-max 2 `
+  -ngl 999 `
+  --no-mmap `
+  -ctk f16  `
+  -ctv f16  `
+  -t 12 `
+  --parallel 1 `
+  -ncmoe 14 `
+  --ctx-size 102400 `
+  --verbosity 4 `
+  -fa on `
+  --reasoning off `
+  --reasoning-budget 0 `
+  --temp 0.6 `
+  --top-p 0.8 `
+  --top-k 20 `
+  --min-p 0.0 `
+  --presence-penalty 1.5 `
+  --repeat-penalty 1 `
+  --no-ui `
+  --fit-target 1536

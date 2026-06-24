@@ -1,0 +1,27 @@
+D:llama_server\llama-server.exe `
+  --alias qwen36-MTP-UD `
+  -m "I:\models\unsloth\Qwen3.6-35B-A3B-MTP-GGUF\Qwen3.6-35B-A3B-UD-Q4_K_M.gguf" `
+  -ngl 99 `
+  --no-mmap `
+  --cache-type-k q8_0 `
+  --cache-type-v q8_0 `
+  -t 12 `
+  --spec-type draft-mtp `
+  --spec-draft-n-max 3 `
+  --parallel 1 `
+  -np 1 `
+  --jinja `
+  --kv-unified `
+  -ncmoe 30 `
+  --ctx-size 160000 `
+  --verbosity 4 `
+  -fa on `
+  --reasoning off `
+  --reasoning-budget 0 `
+  --temp 0.6 `
+  --top-p 0.8 `
+  --top-k 20 `
+  --min-p 0.0 `
+  --presence-penalty 1.5 `
+  --repeat-penalty 1 `
+  --no-ui

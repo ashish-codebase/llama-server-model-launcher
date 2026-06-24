@@ -1,0 +1,13 @@
+D:\llama_server\llama-server.exe `
+  --alias Gemma4-12B-mtp-qat-Unsloth `
+  -m "I:\models\yuxinlu1\gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF\gemma4-v2-Q4_K_M.gguf" `
+  --kv-unified `
+  --parallel 1 `
+  --ctx-size 200000 `
+  --temp 1 `
+  --top-p 0.95 `
+  --top-k 64 `
+  -ngl 99 `
+  -fa on `
+  --reasoning off `
+  --chat-template-kwargs '{\"enable_thinking\":false}'

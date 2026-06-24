@@ -1,0 +1,12 @@
+D:\llama_server\llama-server.exe `
+  --alias Gemma4-12B-mtp-qat-Unsloth `
+  --parallel 1 `
+  -m "I:\models\yuxinlu1\gemma-4-12B-coder-fable5-composer2.5-v1-GGUF\gemma4-coding-Q4_K_M.gguf" `
+  -c 128000 `
+  --temp 1 `
+  --top-p 0.95 `
+  --top-k 64 `
+  -ctk 'q8_0' `
+  -ctv 'q8_0' `
+  -ngl 999 `
+  -fa on

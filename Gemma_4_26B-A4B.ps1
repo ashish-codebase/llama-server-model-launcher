@@ -1,0 +1,21 @@
+D:\llama_server\llama-server.exe `
+  --alias Gemma4-26B-A4B `
+  -m "I:\models\lmstudio-community\gemma-4-26B-A4B-it-GGUF\gemma-4-26B-A4B-it-Q4_K_M.gguf" `
+  --no-mmap `
+  -ngl 99 `
+  -ctk q8_0 `
+  -ctv q8_0 `
+  -t 12 `
+  --parallel 1 `
+  -n 4096 `
+  -c 65536 `
+  --verbosity 3 `
+  --reasoning off `
+  --reasoning-budget 0 `
+  --no-mmproj `
+  --temp 0.3 `
+  --top-p 0.97 `
+  --top-k 64 `
+  --no-warmup `
+  --flash-attn on `
+  -ncmoe 14
